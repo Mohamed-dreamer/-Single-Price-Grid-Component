@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+body{
+  
+   background-color: #E6EFF5;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+   height: 100vh;
+   justify-items: center;
+   align-items: center;
+}
+.container{
+   
+   display: grid;
+   grid-template-columns: repeat(2,300px);
+   grid-template-rows: repeat(2,250px);
+   grid-template-areas: 
+          "top top"
+      "side-1 side-2"
+   ;
+ 
+}
+.box1{
+    grid-column: span 3;
+    background-color:#FFFFFF;
+    grid-area: top ;
+    padding: 30px;
+
+}
+h2{
+    font-size:25px ;
+    color:hsl(179, 62%, 43%);
+}
+.sub{
+    color:hsl(71, 73%, 54%);
+}
+.wide{
+    font-size: 15px;
+    color: #9AA7BE;
+    font-weight: 700;
+    line-height: 26px
+}
+.box2{
+    background-color: hsl(179, 62%, 43%);
+    grid-area: side-1;
+    padding: 15px;
+
+}
+h3{
+color:white;
+font-size: 16px;
+}
+strong{
+    color: white;
+    font-size: 25px;
+}
+span{
+    color: #9AA7BE;
+    font-size: small;
+   
+}
+.box2 p{
+    color: #FFFFFF;
+}
+button{
+    width: 250px;
+    height: 50px;
+    background-color: hsla(71, 73%, 54%, 1);;
+    color:white;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+}
+.box3{
+    background-color:#4ABFBC;
+    grid-area: side-2;
+    padding: 25px;
+   
+}
+h4{
+    color: white;
+    margin: 0;
+}
+p{
+    font-size: 15px;
+    font-weight: 400;
+    
+}
